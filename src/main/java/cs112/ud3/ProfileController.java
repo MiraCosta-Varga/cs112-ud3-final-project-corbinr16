@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static java.lang.Character.getName;
+
 public class ProfileController {
 
     @FXML
@@ -19,6 +21,9 @@ public class ProfileController {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("profile-info.fxml"));
         Parent eventViewParent = loader.load();
+
+        ProfileInfoController profileInfoController = loader.getController();
+        profileInfoController.initData("Corbin");
 
         Stage popupStage = new Stage();
 
@@ -36,6 +41,9 @@ public class ProfileController {
         loader.setLocation(HelloApplication.class.getResource("profile-info.fxml"));
         Parent eventViewParent = loader.load();
 
+        ProfileInfoController profileInfoController = loader.getController();
+        profileInfoController.initData("Luis");
+
         Stage popupStage = new Stage();
 
         popupStage.initModality(Modality.APPLICATION_MODAL); //locks screen to current popup window
@@ -50,5 +58,6 @@ public class ProfileController {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.close();
     }
+
 }
 
