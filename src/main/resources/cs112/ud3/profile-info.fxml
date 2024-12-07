@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.ProfileInfoController" >
+   <children>
+      <Button fx:id="exitButton" layoutX="74.0" layoutY="61.0" mnemonicParsing="false" onAction="#onExitButtonClick" text="Exit" />
+      <Label fx:id="characterNameLabel" layoutX="14.0" layoutY="6.0" text="Character Name" />
+      <Label fx:id="classLevelLabel" layoutX="14.0" layoutY="23.0" text="Class Level" />
+      <Label fx:id="silverLabel" layoutX="14.0" layoutY="42.0" text="Silver" />
+   </children>
+</Pane>
