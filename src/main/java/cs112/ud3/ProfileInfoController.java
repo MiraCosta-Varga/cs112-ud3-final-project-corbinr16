@@ -10,17 +10,14 @@ public class ProfileInfoController {
 
     private String name;
 
-    public void processCharacterName(Character character) {
-        String characterName = character.getName();
-    }
-
     @FXML
-    private Label characterNameLabel;
+    private Label characterNameLabel, classLevelLabel, silverLabel, featuredAbilityLabel;
 
-    protected void initData(String name) {
-        this.name = name;
-
-        characterNameLabel.setText(this.name);
+    protected void initData(String name, int level, int silver, String catchPhrase) {
+        characterNameLabel.setText(name);
+        classLevelLabel.setText(String.valueOf(level));
+        silverLabel.setText(String.valueOf(silver));
+        featuredAbilityLabel.setText(catchPhrase);
     }
 
 

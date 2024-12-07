@@ -101,6 +101,6 @@ public abstract class Character {
 
     public abstract void featuredAbility();
 
-    public abstract void catchPhrase();
+    public abstract String catchPhrase();
 
 }

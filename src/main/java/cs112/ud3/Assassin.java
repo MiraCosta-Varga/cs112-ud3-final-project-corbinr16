@@ -32,7 +32,7 @@ public class Assassin extends Character {
     }
 
     @Override
-    public void catchPhrase() {
-        System.out.println("Always sneaking and stabbing");
+    public String catchPhrase() {
+        return "Always sneaking and stabbing";
     }
 }

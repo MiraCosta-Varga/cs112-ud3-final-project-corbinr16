@@ -11,19 +11,25 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static java.lang.Character.getName;
-
 public class ProfileController {
+
+    private Character Profile1 = new Assassin("Khryz", 1640, 10);
+    private Character Profile2 = new Warrior("Luis", 1630, 100000);
+
 
     @FXML
     protected void onProfileButtonClick1() throws IOException {
-        //System.out.println("Profile 1 info.");
+        String characterName = Profile1.getName();
+        int characterLevel = Profile1.getItemLevel();
+        int characterSilver = Profile1.getSilver();
+        String catchPhrase = Profile1.catchPhrase();
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("profile-info.fxml"));
         Parent eventViewParent = loader.load();
 
         ProfileInfoController profileInfoController = loader.getController();
-        profileInfoController.initData("Corbin");
+        profileInfoController.initData(characterName, characterLevel, characterSilver, catchPhrase);
 
         Stage popupStage = new Stage();
 
@@ -36,13 +42,17 @@ public class ProfileController {
 
     @FXML
     protected void onProfileButtonClick2() throws IOException {
-        //System.out.println("Profile 2 info.");
+        String characterName = Profile2.getName();
+        int characterLevel = Profile2.getItemLevel();
+        int characterSilver = Profile2.getSilver();
+        String catchPhrase = Profile2.catchPhrase();
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(HelloApplication.class.getResource("profile-info.fxml"));
         Parent eventViewParent = loader.load();
 
         ProfileInfoController profileInfoController = loader.getController();
-        profileInfoController.initData("Luis");
+        profileInfoController.initData(characterName, characterLevel, characterSilver, catchPhrase);
 
         Stage popupStage = new Stage();
 

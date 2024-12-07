@@ -19,7 +19,8 @@ public class Warrior extends Character {
     }
 
     @Override
-    public void catchPhrase() {
-        System.out.println("Oi, when can I hit stuffs!");
+    public String catchPhrase() {
+        return "Oi, when can I hit stuffs!";
+
     }
 }
