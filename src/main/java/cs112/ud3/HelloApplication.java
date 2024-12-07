@@ -18,6 +18,33 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
+
+        //MAIN CLASS FROM UD1
+        Character Deathblade = new Assassin("Corbin", 1640, 10);
+        /*
+        System.out.println(Deathblade);
+        Deathblade.warCry();
+        Deathblade.catchPhrase();
+        Deathblade.featuredAbility();
+        */
+
+
+        Character Destroyer = new Warrior("Chris", 1640, 100000);
+        /*
+        System.out.println(Destroyer);
+        Destroyer.warCry();
+        Destroyer.catchPhrase();
+        Destroyer.featuredAbility();
+        */
+
+        /*System.out.println();
+        Character Shadowhunter = new Assassin();
+        System.out.println(Shadowhunter);
+        */
+
+
+
+
         launch();
     }
 }
