@@ -9,10 +9,16 @@ Use [Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d) to format a
 
 Place the animated image of your project demo here!
 
+![alt text](UD3gif.gif)
+
 ## UML Diagram
 
 Place your UML diagram image here! Make sure they're updated to be accurate to your final project!
 
+![alt text](UMLUD3.png)
+
 ## Wireframe
 
 Place your wireframe image(s) here! Make sure they're updated to be accurate to your final project!
+
+![alt text](GUIwireframeUD3.png)
